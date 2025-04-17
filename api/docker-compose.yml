@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: 2fa-manager-mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin123
+    networks:
+      - 2fa-network
+
+  # api:
+  #   build:
+  #     context: ./api
+  #     dockerfile: Dockerfile
+  #   container_name: 2fa-manager-api
+  #   ports:
+  #     - "3000:3000"
+  #   environment:
+  #     - MONGODB_URI=mongodb://admin:admin123@mongodb:27017/2fa-manager?authSource=admin
+  #   depends_on:
+  #     - mongodb
+  #   networks:
+  #     - 2fa-network
+
+volumes:
+  mongodb_data:
+    name: 2fa-manager-mongodb-data
+
+networks:
+  2fa-network:
+    name: 2fa-manager-network

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo circular -->
+  <circle cx="64" cy="64" r="60" fill="#4CAF50"/>
+  
+  <!-- Cadeado -->
+  <rect x="44" y="50" width="40" height="30" rx="4" fill="white"/>
+  <rect x="54" y="40" width="20" height="10" rx="2" fill="white"/>
+  
+  <!-- Número 2 -->
+  <path d="M64 60 L64 80 L84 80" stroke="white" stroke-width="8" fill="none"/>
+  <path d="M64 60 L84 60" stroke="white" stroke-width="8" fill="none"/>
+</svg> 

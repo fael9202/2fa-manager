@@ -1,0 +1,16 @@
+{
+  "name": "2fa-manager",
+  "main": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run index.ts",
+    "dev": "bun --watch run index.ts"
+  },
+  "dependencies": {
+    "mongoose": "^8.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+} 
